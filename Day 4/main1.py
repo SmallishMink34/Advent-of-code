@@ -1,4 +1,4 @@
-liste = open('Day 4/index.txt', 'r')
+liste = open('Day 4/input.txt', 'r')
 
 input = liste.readlines()
 

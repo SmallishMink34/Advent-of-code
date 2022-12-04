@@ -1,4 +1,4 @@
-liste = open('Day 1/Elf_inv.txt', 'r')
+liste = open('Day 1/input.txt', 'r')
 
 somme_liste = [0]
 indice_somme = 0

@@ -1,4 +1,4 @@
-liste = open('Day 2/File.txt', 'r')
+liste = open('Day 2/input.txt', 'r')
 # Sert a rien 
 coups_1 = {
     'A' : 1,

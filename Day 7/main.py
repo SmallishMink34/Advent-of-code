@@ -1,9 +1,8 @@
 input = open("Day 7\input.txt", "r")
 liste = input.readlines()
 
-
-dico = {} # Stocke l'arborecence
 path = [] # Path en temps réel
+dico = {} # Stocke l'arborecence
 total = 0
 
 # Partie 1

@@ -1,4 +1,13 @@
-move = open("Day 5\input.txt", "r")
+
+def move(frome, to, count):
+    value = len(Arrang[frome-1])-count
+    temp = Arrang[frome-1][value:len(Arrang[frome-1])]
+    del Arrang[frome-1][value:len(Arrang[frome-1])]
+    for i in temp:
+        Arrang[to-1].append(i)
+
+
+movee = open("Day 5\input.txt", "r")
 crate = open("Day 5\input2.txt", "r")
 
 Arrang = []
@@ -7,7 +16,7 @@ for i in range(9):
     Arrang[i] = [' ']* 8
 
 liste_c = crate.readlines()
-liste_m = move.readlines()
+liste_m = movee.readlines()
 
 for i in range(len(liste_c)):
     for i2 in range(len(liste_c[i].split(','))):
@@ -27,12 +36,7 @@ def printl(l):
     for i in l:
         print(i)
 
-def move(frome, to, count):
-    value = len(Arrang[frome-1])-count
-    temp = Arrang[frome-1][value:len(Arrang[frome-1])]
-    del Arrang[frome-1][value:len(Arrang[frome-1])]
-    for i in temp:
-        Arrang[to-1].append(i)
+
         
 count = 0
 for i in liste_m:
